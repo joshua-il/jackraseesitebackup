@@ -1,0 +1,344 @@
+<html>
+<head>
+<title>-:- actor Jack Rasee (Raja Sekar) </title>
+<style type="text/css">
+
+/*Credits: Dynamic Drive CSS Library */
+/*URL: http://www.dynamicdrive.com/style/ */
+
+.thumbnail{
+position: relative;
+z-index: 0;
+}
+
+.thumbnail:hover{
+background-color: transparent;
+z-index: 50;
+}
+
+.thumbnail span{ /*CSS for enlarged image*/
+position: absolute;
+background-color: lightyellow;
+padding: 5px;
+left: -1000px;
+border: 1px dashed gray;
+visibility: hidden;
+color: black;
+text-decoration: none;
+}
+
+.thumbnail span img{ /*CSS for enlarged image*/
+border-width: 0;
+padding: 2px;
+}
+
+.thumbnail:hover span{ /*CSS for enlarged image on hover*/
+visibility: visible;
+top: 20;
+left: 20px; /*position where enlarged image should offset horizontally */
+
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<link href="style/style.css" rel="stylesheet" type="text/css">
+<body background="images/body-bg.gif" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+<script language="JavaScript1.2">
+<!--
+
+/*---------------[IE 5.5 Scrollbars colorer]--------------------*/
+function scrollBar(line,face,theme)
+	{
+		if (!line||!face)
+			{
+				line=null;
+				face=null;
+				switch(theme) // Predefined themes
+					{
+						case "blue":
+							var line="#78AAFF";
+							var face="#EBF5FF";
+							break;
+						case "orange":
+							var line="#FBBB37";
+							var face="#FFF9DF";
+							break;
+						case "red":
+							var line="#FF7979";
+							var face="#FFE3DD";
+							break;
+						case "green":
+							var line="#00C600";
+							var face="#D1EED0";
+							break;
+						case "neo":
+							var line="#BC7E41";
+							var face="#EFE0D1";
+							break;
+					}
+			}
+
+				with(document.body.style)
+					{
+						scrollbarDarkShadowColor=line;
+						scrollbar3dLightColor=line;
+						scrollbarArrowColor="black";
+						scrollbarBaseColor=face;
+						scrollbarFaceColor=face;
+						scrollbarHighlightColor=face;
+						scrollbarShadowColor=face;
+						scrollbarTrackColor="#F3F3F3";
+					}
+			}
+
+/*------------------[Pointer coordinates catcher]---------------*/
+function colorBar(){
+		var w = document.body.clientWidth;
+		var h = document.body.clientHeight;
+		var x = event.clientX;
+		var y = event.clientY;
+		if(x>w||y-3>h) scrollBar('#000080','#BFDFFF'); // Your colors
+		else scrollBar(null,null,"neo"); // A predefined theme
+	}
+
+if (document.all){
+scrollBar(null,null,"neo");
+document.onmousemove=colorBar;
+}
+
+function offscreen(){
+scrollBar(null,null,"neo");
+}
+
+document.onmouseout=offscreen;
+//-->
+</script>
+<script language="JavaScript">
+
+
+pic0=new Image();
+pic0.src="eye.gif";
+pic1=new Image();
+pic1.src="pupils.gif";
+
+var n4=(document.layers);
+var n6=(document.getElementById&&!document.all);
+var ie=(document.all);
+var O=(navigator.appName.indexOf("Opera") != -1)?true:false;
+var _d=(n4||ie)?'document.':'document.getElementById("';
+var _a=(n4||n6)?'':'all.';
+var _r=(n6)?'")':'';
+var _s=(n4)?'':'.style';
+if (n4){
+document.write('<layer name="eyeball" top=0 left=0 width="69" height="34"><img src="eye.gif" width="69" height="34"></layer>');
+document.write('<layer name="pupil1" top=0 left=0 width="13" height="13"><img src="pupils.gif" width="13" height="13"></layer>');
+document.write('<layer name="pupil2" top:0 left=0 width="13" height="13"><img src="pupils.gif" width="13" height="13"></layer>');
+}
+else{
+if (ie)
+document.write('<div id="ic" style="position:absolute;top:0;left:0"><div style="position:relative">');
+document.write('<div id="eyeball" style="position:absolute;top:100px;left:100px;width:69px;height:34px"><img src="eye.gif" width="69" height="34"></div>');
+document.write('<div id="pupil1" style="position:absolute;top:0px;left:0px;width:12px;height:13px"><img src="pupils.gif" width="13" height="13"></div>');
+document.write('<div id="pupil2" style="position:absolute;top:0px;left:0px;width:12px;height:13px"><img src="pupils.gif" width="13" height="13"></div>');
+if (ie)
+document.write('</div></div>');
+}
+var ym=0;
+var xm=0;
+if (n4||n6){
+ window.captureEvents(Event.MOUSEMOVE);
+ function mouseNS(e){
+ ym = e.pageY-window.pageYOffset;
+ xm = e.pageX;
+ }
+if (n4)window.onMouseMove=mouseNS;
+if (n6)document.onmousemove=mouseNS;
+}
+if (ie||O){
+ function mouseIEO(){
+ ym = (ie)?event.clientY:event.clientY-window.pageYOffset;
+ xm = event.clientX;
+ }
+document.onmousemove=mouseIEO;
+}
+var etemp=eval(_d+_a+"eyeball"+_r+_s); 
+var p1temp=eval(_d+_a+"pupil1"+_r+_s);
+var p2temp=eval(_d+_a+"pupil2"+_r+_s);
+dy=0;
+dx=0;
+fy=0;
+fx=0;
+angle1=0;
+angle2=0;
+d1=0;
+d2=0;
+function makefollow(){
+sy=(!ie)?window.pageYOffset:0;
+wy=(ie)?document.body.clientHeight:window.innerHeight;
+wx=(ie)?document.body.clientWidth:window.innerWidth;
+//Keep eyes on screen. Netscape 6 plays up otherwise!
+var chy=Math.floor(fy-34);
+if (chy <= 0) chy = 0;
+if (chy >= wy-34) chy = wy-34;
+var chx=Math.floor(fx-34);
+if (chx <= 0) chx = 0;
+if (chx >= wx-69) chx = wx-69;
+etemp.top=chy+sy;
+etemp.left=chx;
+//eyeball1 centre.
+c1y=parseInt(etemp.top)+17;
+c1x=parseInt(etemp.left)+17;
+//eyeball2 centre.
+c2y=parseInt(etemp.top)+17;
+c2x=parseInt(etemp.left)+52;
+dy1 = ym+sy - c1y;
+dx1 = xm - c1x;
+d1 = Math.sqrt(dy1*dy1 + dx1*dx1);
+dy2 = ym+sy - c2y;
+dx2 = xm - c2x;
+d2 = Math.sqrt(dy2*dy2 + dx2*dx2);
+ay1 = ym+sy - c1y;
+ax1 = xm - c1x;
+angle1 = Math.atan2(ay1,ax1)*180/Math.PI;
+ay2 = ym+sy - c2y;
+ax2 = xm - c2x;
+angle2 = Math.atan2(ay2,ax2)*180/Math.PI;
+dv=1.7;
+p1temp.top=(d1 < 17)?(c1y-6+d1/dv*Math.sin(angle1*Math.PI/180)):(c1y-6+10*Math.sin(angle1*Math.PI/180));
+p1temp.left=(d1 < 17)?(c1x-6+d1/dv*Math.cos(angle1*Math.PI/180)):(c1x-6+10*Math.cos(angle1*Math.PI/180));
+p2temp.top=(d2 < 17)?(c2y-6+d2/dv*Math.sin(angle2*Math.PI/180)):(c2y-6+10*Math.sin(angle2*Math.PI/180));
+p2temp.left=(d2 < 17)?(c2x-6+d2/dv*Math.cos(angle2*Math.PI/180)):(c2x-6+10*Math.cos(angle2*Math.PI/180));
+}
+function move(){
+if (ie)ic.style.top=document.body.scrollTop;
+dy=fy+=(ym-fy)*0.12-2;
+dx=fx+=(xm-fx)*0.12;
+makefollow();
+setTimeout('move()',10);
+}
+window.onload=move;
+//-->
+</script>
+	<script language=JavaScript>
+<!--
+
+
+var message="";
+///////////////////////////////////
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+
+document.oncontextmenu=new Function("return false")
+// --> 
+</script>
+	<table align="center" cellpadding="0" cellspacing="0" width="1000" border="0">
+		<tr>
+			<td valign="top" colspan="2" background="headings/Fanzone-title.gif" WIDTH=995 HEIGHT=139>
+				<table align="center" cellpadding="0" border="0" width="995" cellspacing="0">
+					<tr>
+             			<td height="116" colspan="2">&nbsp;</td>
+					</tr>
+					<tr>
+						<td width="328" height="13" align="right" valign="middle" bgcolor="#000000"> <font class="box1_text">
+						[ <a href="On_Location.html" class="sub_menu"> On Location</a> | <a href="Guest.html" class="sub_menu">Guest Book</a> ] [ <a href="http://www.imdb.com/name/nm2597016/" target="_blank" class="sub_menu">www.imdb.com </a> ]&nbsp;&nbsp;</font></td>
+						<td valign="top" width="667"></td>
+					</tr>
+				</table>
+			</td>
+			<td width="5" bgcolor="#CE000E" rowspan="3"></td>
+		</tr>
+		<tr>
+			<td valign="top" bgcolor="#1F1812"><IMG SRC="Gallery/images/JackRasee-text.gif" WIDTH=61 ALT=""></td>
+			<td valign="top" width="939" bgcolor="#1F1812" align="center">
+				<table align="center" cellpadding="0" cellspacing="0" width="939" border="0">
+					<tr>
+						<td height="1" bgcolor="#666666" colspan="2"></td>
+					</tr>
+					<tr>
+						<td width="1" bgcolor="#999999"></td>
+						<td valign="middle" bgcolor="#000000">&nbsp;
+						<font color="#E07E00" face="Verdana, Arial, Helvetica, sans-serif" size="2">
+						<a href="index.html" class="topmenu">Home</a> |
+						<a href="AboutMe.html" class="topmenu">About Me</a> |
+						<a href="Headshots.html" class="topmenu">Headshots</a> |
+						<a href="Movies.html" class="topmenu">Movies </a> |
+						<a href="Missions.html" class="topmenu">Missions</a> |
+						<a href="Media.html" class="topmenu">Media</a> |
+						<a href="Awards.html" class="topmenu">Awards</a> |
+						<a href="Fan.html" class="topmenu"><font color="#FF7800">Fan Zone</font></a> |
+						<a href="Press.html" class="topmenu">Press</a> |
+						<a href="Links.html" class="topmenu">Links</a> |
+						<a href="Contact.html" class="topmenu">Contact Me</a>
+						</font>
+						</td>
+					</tr>
+					<tr>
+						<td height="1" bgcolor="#666666" colspan="2"></td>
+					</tr>
+					<tr>
+						<td height="15" colspan="2" valign="middle" bgcolor="#660000" class="box1_text"></td>
+					</tr>
+					<tr>
+						<td valign="top" colspan="2" align="center" bgcolor="#660000" height="400">
+							<table align="center" cellpadding="0" cellspacing="0" border="0" width="939">
+								<tr>
+									<td width="27" rowspan="7"></td>
+									<td width="300" valign="top" class="WHITE_text">Thank you for visiting my website, please leave your thoughts, advice or comments.  I have visited many of you around the world and if you have taken a picture with me and would like to post it on this site, please contact me through my e-mails, I will try to post it on this site.  Thank you for your support by watching my films and being my fans.  JR </td>
+									<td width="22" valign="top" rowspan="7">&nbsp;</td>
+                					
+                <td width="590" valign="top"><a class="thumbnail" href="#thumb"><img src="fans/img1.gif" border="0"><span><img src="fans/img1-big.gif"></span></br></a></td>
+								</tr>
+								<tr>
+									<td valign="top"><br>
+                  <a class="thumbnail" href="#thumb"><img src="fans/img2.gif" border="0"><span><img src="fans/img2-big.gif"></span></br></a></td>
+									<td valign="top"><br>
+                  <a class="thumbnail" href="#thumb"><img src="fans/img3.gif" border="0"><span><img src="fans/img3-big.gif"></span></br></a></td>
+								</tr>
+								<tr>
+									<td valign="top"><br><br>
+                  <a class="thumbnail" href="#thumb"><img src="fans/img4.gif" border="0"><span><img src="fans/img4-big.gif"></span></br></a></td>
+									<td valign="top"><br><br>
+                  <a class="thumbnail" href="#thumb"><img src="fans/img5.gif" border="0"><span><img src="fans/img5-big.gif"></span></br></a></td>
+								</tr>
+								<tr>
+									<td valign="top"><br><br>
+                  <a class="thumbnail" href="#thumb"><img src="fans/img6.gif" border="0"><span><img src="fans/img6-big.gif"></span></br></a></td>
+									<td valign="top"><br><br>
+                  <a class="thumbnail" href="#thumb"><img src="fans/img7.gif" border="0"><span><img src="fans/img7-big.gif"></span></br></a></td>
+								</tr>
+								<tr>
+									<td valign="top"><br><br>
+                  <a class="thumbnail" href="#thumb"><img src="fans/img8.gif" border="0"><span><img src="fans/img8-big.gif"></span></br></a></td>
+									<td valign="top"><br><br>
+                  <a class="thumbnail" href="#thumb"><img src="fans/img9.gif" border="0"><span><img src="fans/img9-big.gif"></span></br></a></td>
+								</tr>
+								<tr>
+									<td valign="top"><br><br>
+                  <a class="thumbnail" href="#thumb"><img src="fans/img10.gif" border="0"><span><img src="fans/img10-big.gif"></span></br></a></td>
+									<td valign="top"><br><br>
+                  <a class="thumbnail" href="#thumb"><img src="fans/img11.gif" border="0"><span><img src="fans/img11-big.gif"></span></br></a></td>
+								</tr>
+								<tr>
+									<td valign="top"><br><br>
+                  <a class="thumbnail" href="#thumb"><img src="fans/img12.gif" border="0"><span><img src="fans/img12-big.gif"></span></br></a></td>
+									<td valign="top"><br><br></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td valign="middle" bgcolor="#815B3A" colspan="2" height="25" align="center">
+				<font class="box1_text">&copy; Jackrasee 2005 </font>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
