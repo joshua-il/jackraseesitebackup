@@ -1,0 +1,31 @@
+/* CSS Document */
+a.topmenu{font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #FFCC00;font-weight: regular; text-align:none;text-decoration:none;}
+a.topmenu:hover{font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #FF7800;font-weight: regular;text-decoration:none}
+
+.feedback_field{FONT-SIZE: 8pt; COLOR: #6e6E6E; FONT-FAMILY: Tahoma, Arial, Helvetica; text-align:right; line-height:1px; padding:10px; letter-spacing: 1pt; word-spacing: 1pt;font-weight: Bold; }
+
+a.sub_menu{font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #D0D0D0;font-weight: normal;text-decoration:none; LINE-HEIGHT: 17px;}
+a.sub_menu:hover{font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #FF0000;font-weight: normal;text-decoration:none}
+
+a.red_menu{font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #FF0000;font-weight: normal;text-decoration:none; LINE-HEIGHT: 17px;}
+a.red_menu:hover{font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #D0D0D0;font-weight: normal;text-decoration:none}
+
+a.downs_menu{font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #FF0000;font-weight: normal;text-decoration:none; LINE-HEIGHT: 17px;}
+a.downs_menu:hover{font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #FFF600;font-weight: normal;text-decoration:none}
+
+.box1_text{font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #989898;font-weight: none;text-decoration:none;LINE-HEIGHT: 13px;text-align:justify;}
+.body_text{font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;font-weight: none;text-decoration:none;LINE-HEIGHT: 18px;text-align:justify;}
+.bodymax_text{font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;font-weight: none;text-decoration:none;LINE-HEIGHT: 20px;text-align:justify;}
+.WHITE_text{font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #989898;font-weight: none;text-decoration:none;LINE-HEIGHT: 20px;text-align:justify;}
+A.options {
+	{font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 11px;
+	FONT-WEIGHT: regular; PADDING-BOTTOM: 1px; WIDTH: 100%; COLOR: #FF0000; PADDING-TOP: 1px; TEXT-DECORATION: none
+}
+A.options:hover {
+	{font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #001178;
+	FONT-WEIGHT: bold; COLOR: #9C8464; BACKGROUND-COLOR: #000000; TEXT-DECORATION: none;}
+
+
+/*END MENU STYLE*/
+-->
+</style>
